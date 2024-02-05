@@ -4,7 +4,8 @@
   --gray-cold-3: #42403d;
   --gray-cold-light: #e8e3dc;
   --orange: #ff8800;
-  --cnews: "Courier-new", Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
+  --cnews: "Courier New", Courier, monospace;
 }
 
 /*# sourceMappingURL=variables.css.map */
