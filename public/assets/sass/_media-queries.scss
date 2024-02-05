@@ -1,0 +1,38 @@
+// Phones
+
+// Mobile first, default
+
+// Landscape phone to portrait tablet
+@mixin sm {
+    @media only screen and (min-width: 576px) {
+        @content;
+    }
+}
+
+// Portrait tablet to landscape and desktop
+@mixin md {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+// Desktop
+@mixin lg {
+    @media only screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+// Large desktop
+@mixin xl {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+// Large desktop xxl
+@mixin xxl {
+    @media only screen and (min-width: 1300px) {
+        @content;
+    }
+}
