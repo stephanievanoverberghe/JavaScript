@@ -7,4 +7,21 @@
   --cnews: "Courier-new", Courier, monospace;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--cnews);
+  font-size: 1.6rem;
+  background-color: var(--gray-cold-1);
+  color: var(--gray-cold-light);
+}
+
 /*# sourceMappingURL=style.css.map */
