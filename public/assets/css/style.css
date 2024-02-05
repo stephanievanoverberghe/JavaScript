@@ -4,6 +4,7 @@
   --gray-cold-3: #42403d;
   --gray-cold-light: #e8e3dc;
   --orange: #ff8800;
+  --orange-hover: #ffaa4a;
   font-family: "Courier New", Courier, monospace;
   --cnews: "Courier New", Courier, monospace;
 }
@@ -20,11 +21,16 @@ html {
 
 body {
   font-family: var(--cnews);
-  font-size: 2rem;
   background-color: var(--gray-cold-1);
   color: var(--gray-cold-light);
 }
 
+.container__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .container__btn .btn__items {
   margin-bottom: 1rem;
 }
@@ -33,10 +39,57 @@ body {
   font-size: 2.5rem;
   background-color: var(--gray-cold-3);
   border-radius: 5px;
-  width: 10rem;
-  height: 6rem;
+  width: 8rem;
+  height: 5rem;
   border: none;
   font-family: var(--cnews);
+}
+@media only screen and (min-width: 768px) {
+  .container__btn .btn__items .btn {
+    width: 10rem;
+    height: 7rem;
+  }
+}
+.container__btn .btn__items .btn__number {
+  background-color: var(--gray-cold-2);
+  transition: all 0.3s;
+}
+.container__btn .btn__items .btn__number:hover {
+  background-color: var(--gray-cold-3);
+}
+.container__btn .btn__items .btn__egal {
+  background-color: var(--orange);
+  color: var(--gray-cold-1);
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.container__btn .btn__items .btn__egal:hover {
+  background-color: var(--orange-hover);
+}
+.container__btn .btn__items .btn__other:hover {
+  background-color: var(--gray-cold-2);
+  transition: all 0.3s;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.container .para__items {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.container .para__calc {
+  font-size: 2.5rem;
+}
+.container .para__result {
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--orange);
 }
 
 /*# sourceMappingURL=style.css.map */
