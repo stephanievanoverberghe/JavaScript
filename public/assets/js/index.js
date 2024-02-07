@@ -4,6 +4,7 @@
  * 1 - Gérer les fonctionnalités des boutons
  * Implémenter les clics sur les boutons
  * Afficher les opérations et les nombres dans js--calc et js-result
+ * Concaténer les chiffres pour former des nombres
  * 
  * 2 - Gérer les opérations mathématique
  * Tant que j'ai pas appuyé sur un opérator, les numéros deviennent des nombres
@@ -34,15 +35,18 @@ const addOperator = document.querySelectorAll('.js--add-operator');
 let numberCalc = document.querySelector('.js--calc');
 const result = document.querySelector('.js--result');
 
-
 addNumbers.forEach(button => {
     button.addEventListener('click', event => {
         const displayValue = value => {
-            number = isNaN(value) ? value : Number(value);
-            numberCalc.textContent = number;
+            if (numberCalc.textContent === '0' || numberCalc.textContent === "") {
+                numberCalc.textContent = value;
+            } else {
+                numberCalc.textContent += value;
+            }
+            result.textContent = numberCalc.textContent;
         }
         displayValue(event.target.textContent);
-    })
+    });
 });
 
 addOperator.forEach(button => {
