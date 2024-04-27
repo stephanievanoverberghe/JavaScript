@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Outils",
+        "plays": [
+            {
+                "id": 1,
+                "name": "Calculatrice",
+                "url": "",
+                "img": "",
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Jeux",
+        "plays": [
+            {
+                "id": 1,
+                "name": "Shifumi",
+                "url": "",
+                "img": "",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "name": "Jeu du pendu",
+                "url": "",
+                "img": "",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "name": "Démineur",
+                "url": "",
+                "img": "",
+                "description": ""
+            }
+        ]
+    }
+]

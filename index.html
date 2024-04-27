@@ -4,14 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/assets/css/style.css">
+    <link rel="stylesheet" href="./src/assets/css/output.css">
+    <script
+      src="https://kit.fontawesome.com/33a775bcdb.js"
+      crossorigin="anonymous"
+    ></script>
     <title>JavaScript</title>
 </head>
 
-<body>
+<body class="bg-slate-950 text-slate-50 h-screen lg:grid grid-cols-[350px_auto]">
+    <header class="bg-slate-900">
+        <div class="flex flex-col justify-center items-center py-4 lg:py-0">
+            <img src="./src/assets/img/logo.jpg" alt="Logo du site JavaScript" class="w-56 pb-5 lg:pb-0 lg:w-32 lg:my-8">
+            <button class="lg:hidden">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+            </button>
+            <nav class="hidden lg:block w-full plays">
+            </nav>
+        </div>
+
+    </header>
+    <main></main>
 
 
-    <script src="./public/assets/js/index.js"></script>
+    <script type="module" src="./src/assets/js/index.js"></script>
 </body>
 
 </html>
